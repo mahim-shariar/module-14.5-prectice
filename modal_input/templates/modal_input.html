@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<form class='container my-5' action="">
+    {% comment %} {% csrf_token %} {% endcomment %}
+    <h1> This is Modals prectice section: </h1>
+
+    {{form | crispy}}
+</form>
+
+{% endblock %}
